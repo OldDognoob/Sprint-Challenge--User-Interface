@@ -1,0 +1,47 @@
+@import url("index.css");
+
+.container-about-page {
+    width: 800px;
+    margin: 0 auto;
+    padding: 5px 0px 0px 0px;
+}
+
+.about-top-content {
+    padding: 20px;
+    margin: 10px 0px;
+    border-bottom: 1px dashed black;
+}
+
+.about-main-content{
+    display: flex;
+}
+
+.about-main-top .about-main-bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-main-boxes {
+    width: 90%;
+    border-bottom: 1px dashed black;
+    margin-top: 20px;
+}
+
+.about-main-boxes img {
+    width: 100%;
+}
+
+.about-main-boxes h2 {
+    padding-top: 20px;
+}
+
+.about-box-btn {
+    border: 2px solid black;
+    padding: 6px 20px;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.about-bottom-content {
+    padding-top:40px;
+}
