@@ -45,3 +45,10 @@
 .about-bottom-content {
     padding-top:40px;
 }
+
+@media (max-width: 600px) {
+    .container-about-page {
+        width: 600px;
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+    }

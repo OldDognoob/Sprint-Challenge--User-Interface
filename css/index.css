@@ -212,3 +212,10 @@ footer nav a {
 .music{
     display:none;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 5px 0px 0px 0px;
+    }
