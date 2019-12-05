@@ -219,3 +219,188 @@ footer nav a {
         margin: 0 auto;
         padding: 5px 0px 0px 0px;
     }
+
+
+}
+
+/* STRETCH GOAL 1: BUILD NEW PAGE FROM NAVIGATION MENU */
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+
+  .leftcolumn {
+    float: left;
+    width: 75%;
+    
+  }
+
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  .img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .footer {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+  }
+
+/* MEDIA SCREEN TO CHALLENGE STRETCH GOAL 1 */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* ANIMATION TO CHALLENGE STRETCH GOAL 1 */
+
+.navitems a:hover{
+    animation-name: nave;
+    animation-duration:2s;
+
+}
+
+@keyframes intro{
+    0%   {opacity: 0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.75;}
+    100% {opacity: 1;}
+  } 
+
+@keyframes nave{
+    0% {color: black;}
+    5% {color: white;}
+    100% {color: gray;}
+} 
+
+/* STRETCH GOAL 2: INTRODUCE CSS ANIMATIONS */
+
+header nav a:hover {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: lightblue;
+    }
+    100% {
+        background-color: rgb(49, 154, 254);
+        transition: background 0.3s ease-in;
+        color:purple;
+        border-radius: 50px;
+    }
+}
+
+
+/* STRETCH GOAL 3: BUILD CONTACT PAGE */
+
+.contact-form {
+    margin: 0px 15px 25px;
+    padding-top: 25px;}
+
+
+form {
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 25px auto 40px;
+  }
+
+  .form-text {
+    width: 500px;
+    padding: 12px; 
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  .message-text {
+    width: 500px;
+    height: 100px;
+    padding: 12px; 
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  .contact-bottom-content {
+    margin: 0px 15px 25px;
+    padding-top: 25px;
+    border-top: 1px dashed black;
+
+}
+
+.contact-intro {
+    margin: 0px 15px 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed black;
+}
+
+.contact-header {
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0px 25px;
+    height: 200px;
+    width: 800px;
+}
+
+button {
+    display: inline-block;
+    /* border: unset; */
+    padding: 6px 20px;
+    margin: 15px;
+    border: 3px solid black;
+    /* background-color: cornflowerblue; */
+    /* color: whitesmoke; */
+}
+
+/* STRETCH GOAL 4: ADD RESPONSIVE MEDIA QUERIES */
+
+@media only screen and (max-width:768px){
+    .container{
+        width: 500px;
+    }
+    .navitems{
+        width: 500px;
+    }
+    img{
+        width: 100%;
+    }
+}
