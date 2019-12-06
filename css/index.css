@@ -301,14 +301,8 @@ body {
 
 }
 
-@keyframes intro{
-    0%   {opacity: 0;}
-    25%  {opacity: 0.5;}
-    50%  {opacity: 0.75;}
-    100% {opacity: 1;}
-  } 
-
 @keyframes nave{
+   
     0% {color: black;}
     5% {color: white;}
     100% {color: gray;}
